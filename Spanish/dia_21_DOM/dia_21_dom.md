@@ -296,14 +296,15 @@ Añadamos un poco de estilo a nuestros títulos. Si el elemento tiene índice pa
 
 ```js
 const titles = document.querySelectorAll("h1");
-titles.forEach((title, i) => {
-  title.style.fontSize = "24px"; // todos los títulos tendrán un tamaño de letra de 24px
-  if (i % 2 === 0) {
-    title.style.color = "green";
-  } else {
-    title.style.color = "red";
-  }
-});
+
+for (let i = 0; i < titles.length; i++) {
+   titles[i].style.fontSize = "24px"; // todos los títulos tendrán un tamaño de letra de 24px
+   if (i % 2 === 0) {
+       titles[i].style.color = "green";
+   } else {
+       titles[i].style.color = "red";
+   }
+}
 ```
 
 #### Añadir estilo Background Color
@@ -312,14 +313,15 @@ Añadamos un poco de estilo a nuestros títulos. Si el elemento tiene índice pa
 
 ```js
 const titles = document.querySelectorAll("h1");
-titles.forEach((title, i) => {
-  title.style.fontSize = "24px"; // todos los títulos tendrán un tamaño de letra de 24px
-  if (i % 2 === 0) {
-    title.style.backgroundColor = "green";
-  } else {
-    title.style.backgroundColor = "red";
-  }
-});
+
+for (let i = 0; i < titles.length; i++) {
+   titles[i].style.fontSize = "24px"; // todos los títulos tendrán un tamaño de letra de 24px
+   if (i % 2 === 0) {
+       titles[i].style.backgroundColor = "green";
+   } else {
+       titles[i].style.backgroundColor = "red";
+   }
+}
 ```
 
 #### Añadir estilo Font Size
@@ -328,14 +330,15 @@ Añadamos algo de estilo a nuestros títulos. Si el elemento tiene índice par l
 
 ```js
 const titles = document.querySelectorAll("h1");
-titles.forEach((title, i) => {
-  title.style.fontSize = "24px"; // todos los títulos tendrán un tamaño de letra de 24px
-  if (i % 2 === 0) {
-    title.style.fontSize = "20px";
-  } else {
-    title.style.fontSize = "30px";
-  }
-});
+
+for (let i = 0; i < titles.length; i++) {
+   titles[i].style.fontSize = "24px"; // todos los títulos tendrán un tamaño de letra de 24px inicialmente
+   if (i % 2 === 0) {
+       titles[i].style.fontSize = "20px";
+   } else {
+       titles[i].style.fontSize = "30px";
+   }
+}
 ```
 
 Como has notado, las propiedades de css cuando lo usamos en JavaScript va a ser un camelCase. Las siguientes propiedades CSS cambian de background-color a backgroundColor, font-size a fontSize, font-family a fontFamily, margin-bottom a marginBottom.
